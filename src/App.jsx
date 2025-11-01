@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Analytics } from "@vercel/analytics/next";
 
 import Navbar from "./components/Navbar";
 import MotionBackground from "./components/MotionBackground";

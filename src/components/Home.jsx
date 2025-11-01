@@ -30,7 +30,7 @@ export default function Home() {
       <div className="panel" style={{ textAlign: "center" }}>
         <div className="home-title">RAIMA DEB</div>
         <div className="home-sub">
-          Third-year CSE Student at BITS Pilani Dubai • Frontend & Creative UI
+          Third-year CSE Student at BITS Pilani Dubai • Full Stack Developer • AI/ML Engineer
         </div>
         <p className="small">
           Welcome to my dev quest. Explore my missions (projects) and player stats (Skills)

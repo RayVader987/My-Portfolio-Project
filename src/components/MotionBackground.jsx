@@ -50,7 +50,7 @@ export default function MotionBackground() {
     geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
 
-    // Create a small glowy circle texture for particles
+    // Glowy point texture
     const particleTexture = new THREE.TextureLoader().load(
       "https://threejs.org/examples/textures/sprites/disc.png"
     );
@@ -69,8 +69,7 @@ export default function MotionBackground() {
     scene.add(particles);
 
     // --- Cursor parallax movement ---
-    let mouseX = 0,
-      mouseY = 0;
+    let mouseX = 0, mouseY = 0;
     const moveCursor = (e) => {
       mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
       mouseY = (e.clientY / window.innerHeight - 0.5) * -2;
@@ -83,7 +82,7 @@ export default function MotionBackground() {
     };
     window.addEventListener("mousemove", moveCursor);
 
-    // --- Animation ---
+    // --- Animation loop ---
     let frameId;
     const animate = () => {
       frameId = requestAnimationFrame(animate);
@@ -103,7 +102,7 @@ export default function MotionBackground() {
     };
     animate();
 
-    // --- Resize handling ---
+    // Resize handler
     const handleResize = () => {
       const w = mount.clientWidth;
       const h = mount.clientHeight;
@@ -113,7 +112,7 @@ export default function MotionBackground() {
     };
     window.addEventListener("resize", handleResize);
 
-    // --- Cleanup ---
+    // Clean up
     return () => {
       cancelAnimationFrame(frameId);
       window.removeEventListener("resize", handleResize);
@@ -135,10 +134,10 @@ export default function MotionBackground() {
           inset: 0,
           zIndex: 0,
           overflow: "hidden",
-          cursor: "none",
+          cursor: "none", // Hide default cursor
         }}
       />
-      {/* Custom Spaceship Cursor */}
+      {/* ✅ Custom Spaceship Cursor (from public/spaceship.png) */}
       <div
         ref={cursorRef}
         style={{
@@ -149,7 +148,6 @@ export default function MotionBackground() {
           pointerEvents: "none",
           transform: "translate(-50%, -50%)",
           zIndex: 9999,
-          transition: "transform 0.05s ease-out",
         }}
       />
     </>
