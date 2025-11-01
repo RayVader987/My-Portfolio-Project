@@ -145,7 +145,7 @@ export default function MotionBackground() {
           position: "fixed",
           width: "42px",
           height: "42px",
-          background: "url('src/assets/spaceship.png') no-repeat center/contain",
+          background: "url('/spaceship.png') no-repeat center/contain",
           pointerEvents: "none",
           transform: "translate(-50%, -50%)",
           zIndex: 9999,
