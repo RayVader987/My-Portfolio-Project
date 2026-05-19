@@ -31,8 +31,8 @@ function AnimatedRoutes(){
 export default function App(){
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Raima_Deb_Resume.pdf";
-    link.download = "Raima_Deb_Resume.pdf";
+    link.href = "/Official CV - Raima Deb.pdf";
+    link.download = "Official CV - Raima Deb.pdf";
     link.click();
   };
 
