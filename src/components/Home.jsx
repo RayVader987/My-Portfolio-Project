@@ -77,9 +77,9 @@ Outside of academics, you’ll find me: </p>
           fontSize: "1.05rem",
           textAlign: "left"
         }}>
-Experimenting with AI-based projects
-Learning new security concepts and challenges
-Contributing to open-source and building passion projects </p>
+Experimenting with AI-based projects or
+learning new security concepts and challenges
+or building passion projects </p>
 <p style={{ 
           color: "var(--muted)", 
           lineHeight: "1.8", 
