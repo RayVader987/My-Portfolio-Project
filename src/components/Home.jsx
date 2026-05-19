@@ -60,7 +60,7 @@ export default function Home() {
           fontSize: "1.05rem",
           textAlign: "left"
         }}>
-          Hi! I’m Raima, a third-year Computer Science student at BITS Pilani, Dubai, passionate about building intelligent and immersive digital experiences.
+          Hi! I’m Raima Deb, a third-year Computer Science student at BITS Pilani, Dubai, passionate about building intelligent and immersive digital experiences.
 I’m currently training as a full-stack developer and love integrating AI/ML into real-world applications. I’m also deeply interested in cybersecurity, exploring how systems can be made smarter and more secure.
 What excites me most is innovation—whether it's creating interactive 3D environments with Three.js, developing AI-powered tools, or building user interfaces that feel alive and meaningful. For me, great software lies at the intersection of creativity, technology, and impact. </p>
 <p style={{ 
